@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#312e81" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Inner task card -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="100" width="272" height="312" rx="32" fill="#ffffff" />
+    <!-- Clip on top -->
+    <rect x="206" y="80" width="100" height="36" rx="12" fill="#4338ca" />
+    <rect x="236" y="90" width="40" height="12" rx="6" fill="#ffffff" opacity="0.8" />
+
+    <!-- Task item 1 (completed with checkmark) -->
+    <circle cx="170" cy="180" r="22" fill="#10b981" />
+    <path d="M161 180L167 186L179 174" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="210" y="174" width="140" height="12" rx="6" fill="#94a3b8" />
+
+    <!-- Task item 2 (completed with checkmark) -->
+    <circle cx="170" cy="245" r="22" fill="#6366f1" />
+    <path d="M161 245L167 251L179 239" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="210" y="239" width="110" height="12" rx="6" fill="#94a3b8" />
+
+    <!-- Task item 3 (pending item with ring) -->
+    <circle cx="170" cy="310" r="20" stroke="#cbd5e1" stroke-width="4" fill="none" />
+    <rect x="210" y="304" width="130" height="12" rx="6" fill="#334155" />
+
+    <!-- Task item 4 (pending item with ring) -->
+    <circle cx="170" cy="365" r="14" stroke="#e2e8f0" stroke-width="3" fill="none" opacity="0.6" />
+    <rect x="204" y="360" width="80" height="10" rx="5" fill="#cbd5e1" opacity="0.6" />
+  </g>
+</svg>

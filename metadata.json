@@ -1,0 +1,6 @@
+{
+  "name": "FocoTask - Lista de Tarefas",
+  "description": "Aplicativo PWA moderno e responsivo para gerenciamento de tarefas com categorias, prioridades, estatísticas e assistência inteligente.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
